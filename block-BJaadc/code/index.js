@@ -69,4 +69,6 @@ let messageArray = message.split(" ");
 
 
 // Log all the words of messageArray
-console.log(messageArray);
+for(let word of messageArray){
+    console.log(word);
+}
