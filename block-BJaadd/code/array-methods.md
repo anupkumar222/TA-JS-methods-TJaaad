@@ -31,9 +31,13 @@ Example:
      colors.concat('black', 'red', 21, true); // ['red','green','blue','black', 'red', 21, true]
      ```
    - `concat` accepts n number of values and returns one array with all the values in same order. It does not change the original array.
-   - No it does not mutate the original array
+   - No it does not mutate the original array.
 
 2. `join`
+- Parameter: Specifies a string to separate each pair of adjacent elements of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma (","). If separator is an empty string, all elements are joined without any characters in between them.
+
+- Return: A string with all array elements joined. If arr.length is 0, the empty string is returned.
+
 3. `flat`
 4. `push`
 5. `indexOf`
