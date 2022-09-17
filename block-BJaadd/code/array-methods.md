@@ -39,15 +39,45 @@ Example:
 - Return: A string with all array elements joined. If arr.length is 0, the empty string is returned.
 
 3. `flat`
+It flatens the array and defaults to 1.
+No mutation
+
 4. `push`
+It is used to add elements in the end of the array.
+Mutation off array.
+
 5. `indexOf`
+It locates the the position in the array.
+No mutation
+
 6. `lastIndexOf`
+
 7. `includes`
+The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+
+No mutation
+
 8. `reverse`
+It reverse the sequence of the array.
+
+mutates
 9. `every`
+The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+No mutation
+
 10. `shift`
+The shift() method removes the first element from an array and returns that removed element.AIt changes the length of the array.
+Mutates
+
 11. `splice`
+It removes or replace the existing array.
+Mutate
+
 12. `find`
+ It returns the first element in the provided array that satisfies the provided testing function. 
+ default value is undefined.
+ No mutation
+
 13. `unshift`
 14. `findIndex`
 15. `filter`
