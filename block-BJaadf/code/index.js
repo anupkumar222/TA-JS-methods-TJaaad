@@ -2,29 +2,29 @@ let fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
 
 // Add a new element ('Papaya') into fruits array at end
 fruits.push("Papaya");
-// console.log(fruits);
+console.log(fruits);
 
 // Remove the last element from fruits array
 fruits.pop();
-// console.log(fruits);
+console.log(fruits);
 
 // Log the current length of fruits array
-// console.log(fruits.length);
+console.log(fruits.length);
 
 // Remove the first element from fruits and log the value of fruits (use delete arr[0])
 delete fruits[0];
-// console.log(fruits);
+console.log(fruits);
 
 // Log the element on index 0 and 1
-// console.log(fruits[0], fruits[1]);
+console.log(fruits[0], fruits[1]);
 
 // If the element at 0 index is undefined and index 1 is 'Banana' shift all the values to one lower index (use shift method)
 fruits.shift();
-// console.log(fruits);
+console.log(fruits);
 
 // Add a new element to the start ('Guava') and shift the index of all other to one higher value
 fruits.unshift("Guava");
-// console.log(fruits);
+console.log(fruits);
 
 // Add a new element to the start ('Dragon Fruit') and shift the index of all other to one higher value
 fruits.unshift("Dragon Fruit");
