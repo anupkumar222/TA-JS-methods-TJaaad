@@ -108,9 +108,11 @@ console.log(stringLengthArray);
 
 // - Find the sum of the length of words using above question
 
-let stringSumArray = strings.map((element) => {
-  return element.length ;
+let sum = 0;
+stringLengthArray.map((ele) => {
+  sum = sum + ele;
 })
+console.log(sum);
 
 // - Customers Array
 var customers = [
@@ -121,10 +123,37 @@ var customers = [
 ];
 // - Find all customers whose firstname starts with 'J'
 
+console.log(customers.filter((element) => element.firstname.startsWith("J")))
+
 // - Create new array with only first name
+
+let newArray = [];
+customers.forEach((customer) =>  {
+  newArray.push(customer.firstname)
+});
+console.log(newArray);
 
 // - Create new array with all the full names (ex: "Joe Blogs")
 
+let fullName = customers.map((customer) => {
+  return `${customer.firstname} ${customer.lastname}`;
+})
+console.log(fullName);
+
 // - Sort the array created above alphabetically
 
+console.log(fullName.sort());
+
 // - Create a new array that contains only user who has at least one vowel in the firstname.
+
+let vowel =[];
+customers.filter((ele) => {
+  if(ele.firstname.includes('a') || 
+  ele.firstname.includes('e') ||
+  ele.firstname.includes('i') ||
+  ele.firstname.includes('o') ||
+  ele.firstname.includes('u') ) {
+    vowel.push(ele)
+  } 
+})
+console.log(vowel);
