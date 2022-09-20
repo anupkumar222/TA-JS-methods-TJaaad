@@ -10,7 +10,7 @@ function double(num) {
 }
 let doubleNum = numbers.forEach(double);
 ```
-![](./img/main.png)
+![](./img/main.png) 
 
 
 ```js
@@ -100,3 +100,4 @@ function add(accumulator, currentValue) {
 }
 let sum = numbers.reduce(add);
 ```
+
