@@ -1,35 +1,87 @@
 // NOTE: You can only use the (reduce) array method to solve this exercise:
 
 function countAllPeople() {
-  // your code goes here
+
+  return got.houses.reduce((sum, ele) => {
+    let finalSum = ele.people.length
+    sum = sum + finalSum;
+    return sum;
+  }, 0)
 }
 
 function peopleByHouses() {
-  // your code goes here
+  return got.houses.reduce((acc, ele) => {
+   acc[ele.name] = ele.people.length
+   return acc;
+  }, {})
 }
 
 function everyone() {
-  // your code goes here
+  return got.houses.reduce((acc, ele) => {
+    acc.push(ele.people.reduce((i, j) => {
+      i.push(j.name)
+      return i;
+    }, []))
+    return acc;
+  }, []).flat(Infinity);
 }
 
+
 function nameWithS() {
-  // your code goes here
+  return got.houses.reduce((acc, ele) => {
+    acc.push(ele.people.reduce((i, j) => {
+      if(j.name.includes("S")){
+        i.push(j.name)
+      }
+      return i;
+    }, []))
+    return acc;
+  }, []).flat(Infinity);
 }
 
 function nameWithA() {
-  // your code goes here
+  return got.houses.reduce((acc, ele) => {
+    acc.push(ele.people.reduce((i, j) => {
+      if(j.name.includes("A")){
+        i.push(j.name)
+      }
+      return i;
+    }, []))
+    return acc;
+  }, []).flat(Infinity);
 }
 
 function surnameWithS() {
-  // your code goes here
+  return got.houses.reduce((acc, ele) => {
+    acc.push(ele.people.reduce((i, j) => {
+      if(j.name.split(" ")[1].includes("S")){
+        i.push(j.name)
+      }
+      return i;
+    }, []))
+    return acc;
+  }, []).flat(Infinity);
 }
 
 function surnameWithA() {
-  // your code goes here
+  return got.houses.reduce((acc, ele) => {
+    acc.push(ele.people.reduce((i, j) => {
+      if(j.name.split(" ")[1].includes("A")){
+        i.push(j.name)
+      }
+      return i;
+    }, []))
+    return acc;
+  }, []).flat(Infinity);
 }
 
 function peopleNameOfAllHouses() {
-  // your code goes here
+  return got.houses.reduce((acc, ele) => {
+    acc[ele.name] = ele.people.map((person) => {
+return person.name
+    })
+    return acc;
+   }, {})
 }
 
 // Testing your result after writing your function
