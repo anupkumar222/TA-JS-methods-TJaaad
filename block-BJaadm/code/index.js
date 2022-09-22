@@ -31,7 +31,7 @@ console.log(peopleGrade);
 
 // Create an array peopleSex and store the value of sex key from persons array
 
-peopleSex = peopleName
+let peopleSex = persons.map((person) => person.sex);
 
 // Log the filtered named of people in peopleName that starts with 'J' or 'P'
 function filteredNameJ_PArr(value) {
@@ -47,6 +47,8 @@ return filteredNameJ_P;
 }
 
   console.log(filteredNameJ_PArr(persons),"l ");
+
+  
 
 // Log the length of filtered named of people in peopleName that starts with 'A' and 'C'
 
