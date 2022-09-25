@@ -131,8 +131,12 @@ that fruit has appeared in the array. Store it in new variable fruitsObj
 Output: 
 {banana: 2, cherry: 3, orange: 3, apple: 2, fig: 1}
 */
-let fruitsObj = fruitBasket.reduce((acc, ele, index) => {
-  acc[index] = ele;
+let fruitsObj = fruitBasket.reduce((acc, ele) => {
+  if(acc[ele]) {
+    acc[ele] = acc[ele] + 1;
+  } else {
+    acc[ele] = 1;
+  }
   return acc;
 }, {})
 
